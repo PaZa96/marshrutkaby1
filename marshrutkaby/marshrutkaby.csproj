@@ -123,18 +123,10 @@
     <Content Include="Images\logos\themeforest.jpg" />
     <Content Include="Images\logos\wordpress.jpg" />
     <Content Include="Images\map-image.png" />
-    <Content Include="Images\portfolio\dreams-preview.png" />
-    <Content Include="Images\portfolio\dreams.png" />
-    <Content Include="Images\portfolio\escape-preview.png" />
-    <Content Include="Images\portfolio\escape.png" />
-    <Content Include="Images\portfolio\golden-preview.png" />
-    <Content Include="Images\portfolio\golden.png" />
-    <Content Include="Images\portfolio\roundicons-free.png" />
-    <Content Include="Images\portfolio\roundicons.png" />
-    <Content Include="Images\portfolio\startup-framework-preview.png" />
-    <Content Include="Images\portfolio\startup-framework.png" />
-    <Content Include="Images\portfolio\treehouse-preview.png" />
-    <Content Include="Images\portfolio\treehouse.png" />
+    <Content Include="Images\order\bigstock-Register-Key-Concept-50825219.jpg" />
+    <Content Include="Images\order\check.png" />
+    <Content Include="Images\order\Route.png" />
+    <Content Include="Images\order\ticket.png" />
     <Content Include="Images\team\1.jpg" />
     <Content Include="Images\team\2.jpg" />
     <Content Include="Images\team\3.jpg" />
@@ -161,6 +153,7 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\Home\Registration.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

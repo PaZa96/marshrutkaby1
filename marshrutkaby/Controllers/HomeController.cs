@@ -13,5 +13,9 @@ namespace marshrutkaby.Controllers
         {
             return View();
         }
+        public ActionResult Registration()
+        {
+            return View();
+        }
     }
 }
