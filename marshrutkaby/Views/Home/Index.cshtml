@@ -46,7 +46,6 @@
                 <a class="navbar-brand page-scroll" href="#page-top">Marshrutka.by</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
@@ -67,7 +66,7 @@
                     <li>
                         <a class="page-scroll" href="#contact">Обратная связь</a>
                     </li>
-                    <li class="dropdown open">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Войти <span class="caret"></span></a>
                         <ul id="login-dp" class="dropdown-menu">
                             <li>
@@ -109,8 +108,13 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Marshrutka.by — собирайся, выезжай!</div>
-                <button class="page-scroll btn btn-xl">Регистрация</button>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="intro-heading">Marshrutka.by — собирайся, выезжай!</div>
+                        </div>
+                        <button class="page-scroll btn btn-xl">Регистрация</button>
+                    </div>
+               
             </div>
         </div>
     </header>
@@ -119,16 +123,16 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <h2 class="section-heading">Кто мы?</h2>
                     <h3 class="section-subheading text-muted">Marshrutka.by — собирайся, выезжай!</h3>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row text-left">
                 <div class="col-md-5 col-md-offset-1">
                     <h4 class="service-heading">Маршрутка.by - сервис для бронирования маршрутных такси Передвигайся с нами легко!</h4>
                 </div>
-                <div class="col-md-5 ">
+                <div class="col-md-5 text-left">
                     <p class="text-muted text-about-right">С нашей помощью Вы можете выбрать маршрут и время поездки, посмотреть стоимость, наличие сводобных мест и всего в пару кликов оформить бронь. Управление поездками осуществляется в личном кабинете.</p>
                 </div>
             </div>
@@ -138,18 +142,17 @@
     <section id="routes" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <h2 class="section-heading">Маршруты</h2>
                     <h3 class="section-subheading text-muted">Marshrutka.by — собирайся, выезжай!</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-8 col-sm-8">
-
-                    <img src="~/Images/belarus-map2.png" class="img-responsive" alt="">
+                <div class="col-md-8">
+                    <img src="~/Images/belarus-map2.png" class="img-responsive">
                 </div>
 
-                <div class="col-xs-4 col-sm-4">
+                <div class="col-md-4 ">
                     <div class="mapslogo">
                         Вы можете спланировать
                         свой маршрут
@@ -157,20 +160,23 @@
                     </div>
                 </div>
             </div>
+
+            
         </div>
+       
     </section>
 
     <!-- About Section -->
     <section id="order">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <h2 class="section-heading">Заказ</h2>
                     <h3 class="section-subheading text-muted">Marshrutka.by — собирайся, выезжай!</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
@@ -241,7 +247,7 @@
     <section id="reviews" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <h2 class="section-heading">Отзывы</h2>
                     <h3 class="section-subheading text-muted">Marshrutka.by — собирайся, выезжай!</h3>
                 </div>
@@ -304,13 +310,13 @@
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-12 text-center">
                     <h2 class="section-heading">Обратная связь</h2>
                     <h3 class="section-subheading text-muted">Marshrutka.by — собирайся, выезжай!</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
@@ -334,7 +340,7 @@
                                 </div>
                             </div>
                             <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
+                            <div class="col-md-12 text-center">
                                 <div id="success"></div>
                                 <button type="submit" class="btn btn-xl">Отправить</button>
                             </div>

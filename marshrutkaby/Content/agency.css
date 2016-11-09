@@ -26,6 +26,7 @@ p {
     p.large {
         font-size: 16px;
     }
+   
 
 a, a:hover, a:focus, a:active, a.active {
     outline: 0;
@@ -201,6 +202,9 @@ h1, h2, h3, h4, h5, h6 {
         border: 0;
     }
 
+    .text-about-right {
+        font-size: 1.2em;
+    }
         .navbar-default .navbar-brand {
             font-size: 2em;
             -webkit-transition: all .3s;
@@ -292,6 +296,7 @@ header {
     header .intro-text {
         padding-top: 300px;
         padding-bottom: 200px;
+        font-size: 1.2em;
     }
 
         header .intro-text .intro-lead-in {
@@ -338,8 +343,8 @@ section {
 }
 
 .service-heading {
-     margin-top: -10px;
-  margin-right: 20px;
+    margin-top: -10px;
+    margin-right: 20px;
     text-transform: none;
     font-family: Proxima Nova;
     font-size: 50px;
