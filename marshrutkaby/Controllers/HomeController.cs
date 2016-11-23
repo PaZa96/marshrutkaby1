@@ -21,5 +21,9 @@ namespace marshrutkaby.Controllers
         {
             return View();
         }
+        public ActionResult Master()
+        {
+            return View();
+        }
     }
 }
