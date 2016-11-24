@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .text-about-right {
-        font-size: 1.2em;
+        font-size: 26.5px;
     }
         .navbar-default .navbar-brand {
             font-size: 2em;
@@ -577,8 +577,8 @@ section {
         min-height: 150px;
     }
 
-        .timeline > li .timeline-panel {
-            padding: 0 20px 20px;
+         .timeline > li .timeline-panel {
+            padding: 20px 20px 20px 100px;
         }
 
         .timeline > li .timeline-image {
@@ -604,7 +604,7 @@ section {
     }
 
         .timeline > li .timeline-panel {
-            padding: 0 20px 20px 100px;
+            padding: 20px 20px 20px 100px;
         }
 
         .timeline > li .timeline-image {
