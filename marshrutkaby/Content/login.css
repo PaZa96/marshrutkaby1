@@ -14,6 +14,35 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #18ba60;
+    border-color: #18ba60;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+        color: #fff;
+        background-color: #18ba60;
+        border-color: #18ba60;
+    }
+
+    .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+        background-image: none;
+    }
+
+    .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+        background-color: #18ba60;
+        border-color: #18ba60;
+    }
+
+    .btn-primary .badge {
+        color: #18ba60;
+        background-color: #fff;
+    }
+
 .header1 {
     background-image: url('../Images/auto.jpg');
     background-position: center center;
@@ -100,6 +129,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         transition: padding .3s;
         border: 0;
     }
+
+
 
     .text-about-right {
         font-size: 1.2em;
@@ -345,6 +376,8 @@ label {
   box-shadow: none;
   border-color: #ccc;
 }
+
+
 .btn-login {
   background-color: #E8E9EC;
   outline: none;

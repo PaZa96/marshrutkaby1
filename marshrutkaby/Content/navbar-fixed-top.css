@@ -53,3 +53,11 @@
                  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
             background-color: #18ba60;
         }
+.btn-primary {
+    color: #fff;
+    background-color: #18ba60;
+    border-color: #18ba60;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}

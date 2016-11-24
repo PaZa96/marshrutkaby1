@@ -78,6 +78,8 @@
       <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.0.0\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -118,6 +120,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MarshrutkaDB.mdf" />
+    <Content Include="App_Data\MarshrutkaDB_log.ldf">
+      <DependentUpon>MarshrutkaDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\agency.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -161,12 +167,31 @@
     <Content Include="Images\team\1.jpg" />
     <Content Include="Images\team\2.jpg" />
     <Content Include="Images\team\3.jpg" />
+    <Content Include="MarshrutkabyDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MarshrutkabyDBModel.Context.cs</LastGenOutput>
+      <DependentUpon>MarshrutkabyDBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="MarshrutkabyDBModel.edmx.sql" />
+    <Content Include="MarshrutkabyDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MarshrutkabyDBModel.cs</LastGenOutput>
+      <DependentUpon>MarshrutkabyDBModel.edmx</DependentUpon>
+    </Content>
     <Content Include="Scripts\agency.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\cbpAnimatedHeader.js" />
     <Content Include="Scripts\cbpAnimatedHeader.min.js" />
     <Content Include="Scripts\classie.js" />
+    <EntityDeploy Include="MarshrutkabyDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MarshrutkabyDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="MarshrutkabyDBModel.edmx.diagram">
+      <DependentUpon>MarshrutkabyDBModel.edmx</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\marshrutkaby - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -177,12 +202,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Cars.cs">
+      <DependentUpon>MarshrutkabyDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Drivers.cs">
+      <DependentUpon>MarshrutkabyDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MarshrutkabyDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarshrutkabyDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MarshrutkabyDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarshrutkabyDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MarshrutkabyDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarshrutkabyDBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Registration.cs" />
+    <Compile Include="Order.cs">
+      <DependentUpon>MarshrutkabyDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <DependentUpon>MarshrutkabyDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransportCompany.cs">
+      <DependentUpon>MarshrutkabyDBModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -206,12 +262,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
