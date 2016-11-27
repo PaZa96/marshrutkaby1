@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
             }
 }
 footer {
-    padding: 25px 0;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -379,9 +379,9 @@ label {
 
 
 .btn-login {
-  background-color: #E8E9EC;
+  background-color: #18ba60;
   outline: none;
-  color: #18ba60;
+  color: #E8E9EC;
   font-size: 14px;
   height: auto;
   font-weight: normal;
@@ -393,8 +393,8 @@ label {
 }
 .btn-login:hover,
 .btn-login:focus {
-  color: #fff;
-  background-color: #18ba60;
+  color: #18ba60;
+  background-color: #E8E9EC;
 }
 .forgot-password {
   text-decoration: underline;
@@ -407,9 +407,9 @@ label {
 }
 
 .btn-register {
-  background-color: #E8E9EC;
+  background-color: #18ba60;
   outline: none;
-  color: #18ba60;
+  color: #E8E9EC;
   font-size: 14px;
   height: auto;
   font-weight: normal;
@@ -421,6 +421,6 @@ label {
 }
 .btn-register:hover,
 .btn-register:focus {
-  color: #fff;
-  background-color: #18ba60;
+  color: #18ba60;
+  background-color: #E8E9EC;
 }

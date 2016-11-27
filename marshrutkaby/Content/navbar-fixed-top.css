@@ -1,5 +1,5 @@
 ﻿body {
-    min-height: 2000px;
+    min-height: initial;
     padding-top: 70px;
     background-image: url('../Images/khakaton3.png');
 }
@@ -9,7 +9,39 @@
     border-width:3px;
 }
 
+@media (min-width:768px) {
+    .navbar-default {
+        background-color: transparent;
+        padding: 10px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0;
+    }
 
+    .text-about-right {
+        font-size: 26.5px;
+    }
+        .navbar-default .navbar-brand {
+            font-size: 2em;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            transition: all .3s;
+        }
+
+        .navbar-default .navbar-nav > .active > a {
+            border-radius: 3px;
+        }
+
+        .navbar-default.navbar-shrink {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+            .navbar-default.navbar-shrink .navbar-brand {
+                font-size: 1.5em;
+            }
+}
 .navbar-default {
     background-color: #222;
     border-color: transparent;
