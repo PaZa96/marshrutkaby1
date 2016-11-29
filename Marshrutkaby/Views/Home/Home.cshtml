@@ -1,4 +1,5 @@
-﻿@{
+﻿@using Marshrutkaby.Models
+@{
     Layout = null;
 }
 
@@ -81,9 +82,7 @@
 
     <!-- Header -->
 
-    @using (Html.BeginForm("Register", "Account"))
-    {
-        @Html.AntiForgeryToken()
+    
         <header>
             <div class="container">
                 <div class="intro-text">
@@ -91,13 +90,16 @@
                         <div class="col-md-12 text-center">
                             <div class="intro-heading">Marshrutka.by — собирайся, выезжай!</div>
                         </div>
-                        <button class="page-scroll btn btn-xl">Регистрация</button>
+                           
+                           
+                        @Html.ActionLink("Регистрация", "Register", "Account", new { area = "" }, new { @class = "btn btn-xl" })
+                            
                     </div>
 
                 </div>
             </div>
         </header>
-    }
+    
     }
     <!-- Services Section -->
     <section id="about">

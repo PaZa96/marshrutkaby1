@@ -6,34 +6,51 @@
     <div class="container-index">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" ">
-            <li class="active"><a href="#home" data-toggle="tab">Главная</a></li>
-            <li><a href="#profile" data-toggle="tab">Профиль</a></li>
-            <li><a href="#messages" data-toggle="tab">Сообщения</a></li>
-            <li><a href="#settings" data-toggle="tab">Настройки</a></li>
+            <li class="active"><a href="#route" data-toggle="tab">Маршрут</a></li>
+            <li><a href="#company" data-toggle="tab">Выбор перевозчика</a></li>
+            <li><a href="#data" data-toggle="tab">Данные пасажиров</a></li>
+            <li><a href="#confirmation" data-toggle="tab">Подтверждение заказа</a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
-            <div class="tab-pane fade in active" id="home">
-                <div class="col-md-5">
-                    <h2>Выбор маршрута</h2>
-                    <h4>Откуда</h4>
-                    <div class="form-group">
-                        <input type="text" name="start-point" id="start-point" tabindex="1" class="form-control" placeholder="Откуда" value="" />
-                    </div>
-                    <div class="form-group">
-                        <h4>Куда</h4>
-                        <input type="text" name="end-point" id="end-point" tabindex="2" class="form-control" placeholder="Куда" value="" />
-                    </div>
-                    <div class="form-group">
-                        <h4>Когда</h4>
-                      
-                    </div>
-                </div>
+            <div class="tab-pane fade in active" id="route">
+               <div class="row"> 
+                   <div class="col-md-5">
+                        <h2>Выбор маршрута</h2>
+                        <h4>Откуда</h4>
+                        <div class="form-group">
+                            <input type="text" name="start-point" id="start-point" tabindex="1" class="form-control"  value="" />
+                        </div>
+                        <div class="form-group">
+                            <h4>Куда</h4>
+                            <input type="text" name="end-point" id="end-point" tabindex="2" class="form-control"  value="" />
+                        </div>
+                        <div class="form-group">
+                            <h4>Дата</h4>
+                            <div class="input-group date" id="datetimepicker1">
+                                <input type="text" class="form-control" />
+                                <span class="input-group-addon">
+                                <span class="glyphicon-calendar glyphicon"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>     
+                </div>  
             </div>
-            <div class="tab-pane fade" id="profile">...</div>
-            <div class="tab-pane fade" id="messages">...</div>
-            <div class="tab-pane fade" id="settings">...</div>
+            <div class="tab-pane fade" id="company">...</div>
+            <div class="tab-pane fade" id="data">...</div>
+            <div class="tab-pane fade" id="confirmation">...</div>
         </div>
     </div>
 </div>
 
+@section Scripts {
+@Scripts.Render("~/Scripts/moment-with-locales.min.js")
+@Scripts.Render("~/Scripts/bootstrap-datetimepicker.min.js")
+@Scripts.Render("~/Scripts/bootstrap-datetimepicker.ru.js")
+<script type="text/javascript">
+  $(function () {
+      $('#datetimepicker1').datetimepicker({ pickTime: false, language: 'ru'});
+  });
+</script>
+}

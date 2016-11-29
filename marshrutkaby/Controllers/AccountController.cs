@@ -397,6 +397,11 @@ namespace Marshrutkaby.Controllers
             return RedirectToAction("Home", "Home");
         }
 
+        [AllowAnonymous]
+        public ActionResult PrivateOffice()
+        {
+            return View();
+        }
         //
         // GET: /Account/ExternalLoginFailure
         [AllowAnonymous]
@@ -451,7 +456,7 @@ namespace Marshrutkaby.Controllers
             {
                 return Redirect(returnUrl);
             }
-            return RedirectToAction("Home", "Home");
+            return RedirectToAction("Index", "Home");
         }
 
         internal class ChallengeResult : HttpUnauthorizedResult

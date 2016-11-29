@@ -16,6 +16,7 @@
     <link href="~/Content/login.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -35,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Marshrutka.by</a>
+                @Html.ActionLink("Marshrutka.by", "Home", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -44,13 +45,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Главная</a>
+                        @Html.ActionLink("Главная", "Home", "Home")
                     </li>
                     <li>
-                        <a class="page-scroll" href="#routes">Помощь</a>
-                    </li>
-                    <li>
-                       @Html.ActionLink("Войти", "Login", "Account")
+                        @Html.ActionLink("Регистрация", "Register", "Account")
                     </li>
                 </ul>
             </div>
