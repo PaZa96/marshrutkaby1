@@ -201,6 +201,29 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Images\about\1.jpg" />
+    <Content Include="Images\about\2.jpg" />
+    <Content Include="Images\about\3.jpg" />
+    <Content Include="Images\about\4.jpg" />
+    <Content Include="Images\auto.jpg" />
+    <Content Include="Images\auto.png" />
+    <Content Include="Images\belarus-map2.png" />
+    <Content Include="Images\khakaton3.png" />
+    <Content Include="Images\logos\aetuts.jpg" />
+    <Content Include="Images\logos\creative-market.jpg" />
+    <Content Include="Images\logos\designmodo.jpg" />
+    <Content Include="Images\logos\envato.jpg" />
+    <Content Include="Images\logos\microlancer.jpg" />
+    <Content Include="Images\logos\themeforest.jpg" />
+    <Content Include="Images\logos\wordpress.jpg" />
+    <Content Include="Images\map-image.png" />
+    <Content Include="Images\order\bigstock-Register-Key-Concept-50825219.jpg" />
+    <Content Include="Images\order\check.png" />
+    <Content Include="Images\order\Route.png" />
+    <Content Include="Images\order\ticket.png" />
+    <Content Include="Images\team\1.jpg" />
+    <Content Include="Images\team\2.jpg" />
+    <Content Include="Images\team\3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -261,6 +284,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -8,6 +8,7 @@ namespace Marshrutkaby.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
     }
 
     public class ExternalLoginListViewModel
@@ -75,10 +76,8 @@ namespace Marshrutkaby.Models
         [Display(Name = "PhoneNumber")]
         public string PhoneNumber { get; set; }
 
-        [Required]
-        
+        [Required]     
         [Display(Name = "UserName")]
-        [DataType(DataType.Text)]
         public string UserName { get; set; }
 
 
@@ -90,7 +89,7 @@ namespace Marshrutkaby.Models
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+        [Compare("Password", ErrorMessage = "Пароли не совпадают")]
         public string ConfirmPassword { get; set; }
     }
 
